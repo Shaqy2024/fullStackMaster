@@ -9,12 +9,12 @@ getProducts();
 },[])
 
 const getProducts= async()=>{
-let result = await fetch('http://localhost:5000/products');
+let result = await fetch('full-stack-master.vercel.app/products');
 result = await result.json();
 setProducts(result)
 }
  const deleteProduct = async (id) =>{
-   let result = await fetch(`http://localhost:5000/products/${id}`,{
+   let result = await fetch(`full-stack-master.vercel.app/products/${id}`,{
     method: "Delete"
    })
    result =await result.json();
