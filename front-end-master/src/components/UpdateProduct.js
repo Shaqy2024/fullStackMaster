@@ -16,7 +16,7 @@ getProductDelete();
 
 const getProductDelete = async () =>{
     console.log(params)
-    let result=await fetch(`http://localhost:5000/products/${params.id}`);
+    let result=await fetch(`full-stack-master.vercel.app/products/${params.id}`);
     result = await result.json();
     console.log(result)
     setName(result.name)
